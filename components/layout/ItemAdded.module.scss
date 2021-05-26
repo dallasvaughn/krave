@@ -1,0 +1,59 @@
+.itemadded {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 5rem;
+  width: 20rem;
+  background-color: white;
+  z-index: 10;
+  animation: notification 5.5s;
+
+  color: #77dd77;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  box-shadow: 0 8px 6px -6px black;
+
+  @media (min-width: 1100px) {
+    width: 50rem;
+    height: 10rem;
+    font-size: 2.4rem;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -0.5rem;
+
+    @media (min-width: 1100px) {
+      margin-top: 1rem;
+    }
+  }
+
+  i {
+    margin-right: 1rem;
+    color: green;
+  }
+}
+
+@keyframes notification {
+  0% {
+    transform: translateY(30rem);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(-2.5rem);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-2.5rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-2.5rem);
+    opacity: 0;
+  }
+}
