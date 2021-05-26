@@ -13,7 +13,7 @@ const CartItem = ({ product }) => {
     <div className={styles.cartitem}>
       <div className={styles.thumbnail}>
         <img
-          src={`http://localhost:1337${product.image[0].formats.thumbnail.url}`}
+          src={`https://strapi-krave.herokuapp.com${product.image[0].formats.thumbnail.url}`}
         />
         <span>{product.quantity}</span>
       </div>
