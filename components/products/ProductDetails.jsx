@@ -34,7 +34,7 @@ const ProductDetails = ({ product }) => {
     <section className={styles.productdetails}>
       <div className={styles.container}>
         <img
-          src={`http://localhost:1337${product.image[0].formats.medium.url}`}
+          src={`https://strapi-krave.herokuapp.com${product.image[0].formats.medium.url}`}
         />
         <div className={styles.text}>
           <h2>{product.name}</h2>
