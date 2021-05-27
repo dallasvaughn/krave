@@ -22,9 +22,7 @@ const Product = ({ product }) => {
   return (
     <div className={styles.product}>
       <Link href={`/products/${product.id}`}>
-        <img
-          src={`https://strapi-krave.herokuapp.com${product.image[0].formats.small.url}`}
-        />
+        <img src={product.url} />
       </Link>
       <div className={styles.container}>
         <Link href={`/products/${product.id}`}>
