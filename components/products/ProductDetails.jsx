@@ -33,7 +33,7 @@ const ProductDetails = ({ product }) => {
   return (
     <section className={styles.productdetails}>
       <div className={styles.container}>
-        <img src={product.url} />
+        <img src={product.url} alt="product image" />
         <div className={styles.text}>
           <h2>{product.name}</h2>
           <h3>{product.description}</h3>

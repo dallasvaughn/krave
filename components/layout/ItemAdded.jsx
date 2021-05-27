@@ -10,7 +10,7 @@ const ItemAdded = () => {
     <div className={styles.itemadded} style={{ display: display }}>
       <div className={styles.container}>
         <p>
-          <i class="fas fa-check"></i>Item added to cart
+          <i className="fas fa-check"></i>Item added to cart
         </p>
       </div>
     </div>

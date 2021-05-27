@@ -24,14 +24,14 @@ const Header = () => {
       ></i>
       <nav className={styles.nav}>
         {userCtx.authenticated ? (
-          <li onClick={handleLogout}>Logout</li>
+          <span onClick={handleLogout}>Logout</span>
         ) : (
           <>
             <Link href="/auth/register">
-              <li>Register</li>
+              <span>Register</span>
             </Link>
             <Link href="/auth/login">
-              <li>Login</li>
+              <span>Login</span>
             </Link>
           </>
         )}

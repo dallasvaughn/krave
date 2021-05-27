@@ -22,7 +22,7 @@ const Product = ({ product }) => {
   return (
     <div className={styles.product}>
       <Link href={`/products/${product.id}`}>
-        <img src={product.url} />
+        <img src={product.url} alt="product image" />
       </Link>
       <div className={styles.container}>
         <Link href={`/products/${product.id}`}>

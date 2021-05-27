@@ -12,7 +12,7 @@ const CartItem = ({ product }) => {
   return (
     <div className={styles.cartitem}>
       <div className={styles.thumbnail}>
-        <img src={product.url} />
+        <img src={product.url} alt="product image" />
         <span>{product.quantity}</span>
       </div>
       <div className={styles.desc}>
